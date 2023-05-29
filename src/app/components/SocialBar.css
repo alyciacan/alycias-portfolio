@@ -1,0 +1,31 @@
+.social-img {
+    max-height: 4rem;
+    color: #f7fff7;
+    transition: all .5s;
+    @apply mt-5;
+}
+
+.social-img:hover {
+    color: #4ecdc4;
+    transform: translate(0px, -10px);
+}
+
+.social-list {
+    width: 63px;
+    padding: 0px;
+    @apply mb-5;
+}
+
+.social-aside {
+    @apply items-center flex flex-col justify-end;
+}
+
+li>a {
+    width: 100%;
+    display: block;
+}
+
+
+
+
+

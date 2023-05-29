@@ -1,0 +1,41 @@
+.nav-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.nav-link:hover {
+    color: #4ecdc4;
+}
+
+.nav-link:active {
+    color: #ff6b6b;
+}
+
+/* .logo {
+    max-height: 11vh;
+} */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links-container {
+    align-items: center;
+    display: flex;
+    width: 30vw;
+    list-style: none;
+    counter-reset: nav-links;
+}
+
+.links-container>li {
+    margin: 0% 3.5% 0% 3.5%;
+    counter-increment: nav-links;
+}
+
+.links-container>li::before {
+    content: "<0" counter(nav-links) "> ";
+    color: #4ecdc4;
+}

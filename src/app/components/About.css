@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+.firstName {
+    /* font-size: 8vw; */
+    color: #ff6b6b;
+    @apply text-8xl;
+}
+
+.lastName {
+    font-size: 6.5vw;
+    background-color: #ff6b6b;
+    color: #292f36;
+    @apply text-7xl;
+}
+
+.revolving-msg,
+.lastName,
+.firstName {
+  @apply my-2
+}
+
+.headerText {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: 'Audiowide', cursive;
+}
+
+.revolving-msg::before {
+    content: "front-end web developer";
+    animation: animate infinite 7s;
+    font-size: 3.75vw;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes animate {
+  0% {
+    content: "front-end web developer"
+  }
+  20% {
+    content: "creative problem solver";
+  }
+  40% {
+    content: "empathetic teammate"
+  }
+  60% {
+    content: "forever learner"
+  }
+  80% {
+    content: "language nerd"
+  }
+}
